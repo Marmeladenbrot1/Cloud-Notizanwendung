@@ -6,7 +6,7 @@ button.addEventListener('click', function() {
 
 function newSite(){
     let parent = document.getElementById("pop-up");
-    let text = document.createElement("h1")
+    let text = document.createElement("p")
     text.innerHTML = "Geben Sie ins untere Feld ihre Notiz ein.";
     let input = document.createElement("input");
     let save = document.createElement("button");
