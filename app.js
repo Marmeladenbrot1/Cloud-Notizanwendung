@@ -2,7 +2,6 @@ let button = document.getElementById("Add");
 let notiz;
 button.addEventListener('click', function() {
     newSite();
-   
 });
 
 function newSite(){
@@ -13,9 +12,10 @@ function newSite(){
     let save = document.createElement("button");
     save.innerHTML ="save";
     save.id = "save";
-    parent.appendChild(text);
-    parent.appendChild(input);
-    parent.appendChild(save);
+    
+    parent.insertBefore(save, parent.firstChild);
+    parent.insertBefore(input, parent.firstChild);
+    parent.insertBefore(text, parent.firstChild);
 
     save.addEventListener("click", function() {
         notiz = input.value;
