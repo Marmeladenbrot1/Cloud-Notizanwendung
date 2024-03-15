@@ -1,0 +1,40 @@
+html{
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: black;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+    
+  li {
+    float: right;
+    height: 7vh;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding:14px 16px;
+    height: 7vh;
+    text-decoration: none;
+  }
+    
+  li a:hover {
+    background: rgba(61,61,61,0.5);
+  }
+
+  .title{
+    text-align: center;
+    font-size: 30px;
+  }
