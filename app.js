@@ -29,7 +29,7 @@ function newSite(){
 }
 
 function get() {
-    const URL = "https://api.endpoint.get.com"; 
+    const URL = "https://m7v0lwnbed.execute-api.us-east-1.amazonaws.com/dev"; 
     const fetchData = {
         method: "Post", 
         body: input_text,
@@ -66,7 +66,7 @@ function push(){
             redirect: 'follow'
         };
         // make API call with parameters and use promises to get response
-        fetch("https://api.endpoint.post.com", requestOptions)
+        fetch("https://m7v0lwnbed.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
         .then(response => response.text())
         .then(result => alert(JSON.parse(result).body))
         .catch(error => console.log('error', error));
