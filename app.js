@@ -19,12 +19,12 @@ function newSite(){
     parent.insertBefore(text, parent.firstChild);
 
     save.addEventListener("click", function() {
+        push();
         notiz = input.value;
         console.log(notiz);
         text.remove();
         input.remove();
         save.remove();
-        push();
     })
 }
 
